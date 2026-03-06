@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Yuva Consultancy — Business Registration Experts</title>
+    <meta name="description"
+        content="Learn about Yuva Consultancy — our mission, team, and 10+ years of experience helping businesses register and comply in India and internationally." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .team-card {
+            background: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .team-avatar {
+            height: 180px;
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .team-body {
+            padding: 1.5rem;
+        }
+
+        .team-body h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.0625rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-body .role {
+            color: var(--gold-dark);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .team-body p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .value-card {
+            border-left: 3px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            background: var(--off-white);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin-bottom: 1rem;
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            background: rgba(201, 168, 76, 0.07);
+        }
+
+        .value-card h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.375rem;
+        }
+
+        .value-card p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-box::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(201, 168, 76, 0.2) 0%, transparent 70%);
+        }
+
+        .mission-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+
+        .mission-box p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.0625rem;
+            line-height: 1.75;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏛️</div>
+                    <div class="logo-text">
+                        <strong>Yuva Consultancy</strong>
+                        <span>Business &amp; Compliance Experts</span>
+                    </div>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <div class="nav-item">
+                        <a href="services.html">Services</a>
+                        <div class="dropdown">
+                            <a href="services.html#fssai"><span class="icon">🍽️</span>FSSAI Registration</a>
+                            <a href="services.html#dsc"><span class="icon">🔏</span>DSC Signature</a>
+                            <a href="services.html#iec"><span class="icon">🌐</span>IEC Registration</a>
+                            <a href="services.html#rcmc"><span class="icon">📋</span>RCMC Registration</a>
+                            <a href="services.html#icegate"><span class="icon">🚢</span>ICEGATE Registration</a>
+                            <a href="services.html#port"><span class="icon">⚓</span>Port Registration</a>
+                            <a href="services.html#adcode"><span class="icon">🏦</span>AD Code Registration</a>
+                            <a href="services.html#ifsc"><span class="icon">💳</span>IFSC Registration</a>
+                        </div>
+                    </div>
+                    <a href="international.html">International</a>
+                    <a href="import-export.html">Import &amp; Export</a>
+                    <a href="iso.html">ISO</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+919099665509" class="call-btn"><span class="dot"></span> 📞 +91 90996 65509</a>
+                    <a href="contact.html" class="btn btn-primary btn-sm">Free Quote</a>
+                    <button class="hamburger" id="hamburger"
+                        aria-label="Menu"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="section-head">Navigation</div>
+        <a href="index.html">🏠 Home</a><a href="about.html">👥 About Us</a>
+        <div class="section-head">Services</div>
+        <a href="services.html#fssai">🍽️ FSSAI</a><a href="services.html#iec">🌐 IEC</a><a href="services.html#dsc">🔏
+            DSC</a>
+        <div class="section-head">More</div>
+        <a href="international.html">🌍 International</a><a href="import-export.html">📦 Import &amp; Export</a>
+        <a href="iso.html">🏅 ISO</a><a href="blog.html">📖 Blog</a><a href="contact.html">📬 Contact</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label">About Yuva Consultancy</span>
+            <h1>Your Trusted Business Compliance Partner</h1>
+            <p>For over a decade, we have empowered thousands of Indian entrepreneurs and businesses to register,
+                comply, and grow — in India and globally.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a><span>/</span><span class="current">About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="stats-bar reveal">
+                <div class="stat-item">
+                    <div class="stat-number"><span data-count="5000" data-suffix="+">0+</span></div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-count="10" data-suffix="+">0+</span></div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-count="25" data-suffix="+">0+</span></div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-count="98" data-suffix="%">0%</span></div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+                <div class="reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">From Surat to the World Stage</h2>
+                    <div class="divider"></div>
+                    <p style="color:var(--text-light);margin-bottom:1.25rem;line-height:1.8;">Yuva Consultancy was
+                        founded with a singular mission: to make business compliance simple, affordable, and accessible
+                        for every Indian entrepreneur. What started as a small consulting practice in Surat has grown
+                        into a trusted firm serving thousands of businesses across India and internationally.</p>
+                    <p style="color:var(--text-light);margin-bottom:1.75rem;line-height:1.8;">We specialise in
+                        navigating the complex landscape of Indian regulations — from FSSAI and IEC to international
+                        company formation in USA, UK, UAE, and beyond. Our team of experienced CAs, legal professionals,
+                        and compliance experts bring unmatched depth of knowledge to every client engagement.</p>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                        <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+                        <a href="services.html" class="btn btn-navy">Our Services</a>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="mission-box">
+                        <h3>🎯 Our Mission</h3>
+                        <p>To simplify compliance and regulatory processes so every Indian business owner can focus on
+                            what they do best — growing their business — while we handle the paperwork.</p>
+                    </div>
+                    <div style="margin-top:1.25rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                        <div class="card text-center">
+                            <div style="font-size:2rem;margin-bottom:0.5rem;">🌟</div>
+                            <h3 style="font-family:'Inter',sans-serif;font-size:0.9375rem;">Vision</h3>
+                            <p>To be India's most trusted compliance consulting firm.</p>
+                        </div>
+                        <div class="card text-center">
+                            <div style="font-size:2rem;margin-bottom:0.5rem;">💎</div>
+                            <h3 style="font-family:'Inter',sans-serif;font-size:0.9375rem;">Values</h3>
+                            <p>Integrity, transparency and client-first approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">What We Stand For</span>
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-sub">The principles that guide every interaction, every service, and every decision we
+                    make.</p>
+            </div>
+            <div class="grid-2">
+                <div class="reveal">
+                    <div class="value-card">
+                        <h3>🤝 Client First</h3>
+                        <p>We prioritize your business goals above everything else. Your success is our success.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🔒 Full Transparency</h3>
+                        <p>No hidden charges. No surprises. You know exactly what you pay for and what you get.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>⚡ Speed &amp; Efficiency</h3>
+                        <p>We move fast. Most services are completed within 48-72 hours of document submission.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🎓 Expert Knowledge</h3>
+                        <p>Our team stays updated with every regulatory change so you always receive accurate guidance.
+                        </p>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="value-card">
+                        <h3>🛡️ Accuracy &amp; Compliance</h3>
+                        <p>Every application we file is meticulously reviewed to ensure 100% accuracy and compliance.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🌍 Pan-India &amp; Global Reach</h3>
+                        <p>We serve businesses across India and help them expand internationally with confidence.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>📱 Always Reachable</h3>
+                        <p>Dedicated managers for every client. Call, WhatsApp, or email — we're always available.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>💰 Fair Pricing</h3>
+                        <p>Competitive, transparent pricing that delivers maximum value for every rupee you spend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Team</span>
+                <h2 class="section-title">Meet Our Expert Consultants</h2>
+                <p class="section-sub">A dedicated team of CAs, legal professionals, and compliance specialists
+                    committed to your business success.</p>
+            </div>
+            <div class="grid-4">
+                <div class="team-card reveal">
+                    <div class="team-avatar">👨‍💼</div>
+                    <div class="team-body">
+                        <h3>Rahul Patel</h3>
+                        <div class="role">Founder &amp; Managing Director</div>
+                        <p>15+ years in business compliance and registration with expertise in international company
+                            formation.</p>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👩‍💼</div>
+                    <div class="team-body">
+                        <h3>Priyanka Shah</h3>
+                        <div class="role">Chartered Accountant</div>
+                        <p>Expert in financial compliance, GST, and corporate taxation with 10+ years experience.</p>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👨‍⚖️</div>
+                    <div class="team-body">
+                        <h3>Amit Desai</h3>
+                        <div class="role">Legal &amp; Compliance Head</div>
+                        <p>Specialist in trade law, import-export regulations, and FSSAI/ISO certifications.</p>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👩‍🔬</div>
+                    <div class="team-body">
+                        <h3>Sneha Mehta</h3>
+                        <div class="role">International Business Head</div>
+                        <p>Expert in overseas company formation across USA, UK, UAE, Canada &amp; Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">What Makes Yuva Consultancy Different</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">👨‍💼</div>
+                    <h3>Expert Consultants</h3>
+                    <p>CA, CS &amp; legal professionals with 10+ years of regulatory expertise dedicated to your
+                        success.</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">⚡</div>
+                    <h3>Fast Processing</h3>
+                    <p>Industry-leading turnaround times. Most registrations completed within 48-72 business hours.</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent, competitive pricing with no hidden charges. Best value for every service.</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🤝</div>
+                    <h3>Dedicated Support</h3>
+                    <p>Personal relationship manager assigned for every client. Always reachable via phone or WhatsApp.
+                    </p>
+                </div>
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🌍</div>
+                    <h3>Global Coverage</h3>
+                    <p>International presence across 6+ countries with local expertise for global business formation.
+                    </p>
+                </div>
+                <div class="card reveal text-center">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">🔒</div>
+                    <h3>100% Confidential</h3>
+                    <p>Your documents and information are handled with strict confidentiality and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-banner reveal">
+                <span class="section-label">Let's Work Together</span>
+                <h2>Ready to Start Your Business Journey?</h2>
+                <p>Join 5,000+ businesses that trust Yuva Consultancy for all their compliance and registration needs.
+                </p>
+                <div class="btn-group">
+                    <a href="tel:+919099665509" class="btn btn-primary btn-lg">📞 Call Now</a>
+                    <a href="https://wa.me/919099665509" target="_blank" class="btn btn-outline btn-lg">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon">🏛️</div>
+                            <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
+                                    Experts</span></div>
+                        </a>
+                        <p class="footer-about">Your trusted partner for business registration, compliance, and
+                            international company formation. Serving 5,000+ businesses across India and globally.</p>
+                        <div class="footer-social">
+                            <div class="social-btn">📘</div>
+                            <div class="social-btn">💼</div>
+                            <div class="social-btn">📸</div>
+                            <div class="social-btn">▶️</div>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">🏠 Home</a></li>
+                            <li><a href="about.html">👥 About</a></li>
+                            <li><a href="services.html">📋 Services</a></li>
+                            <li><a href="international.html">🌍 International</a></li>
+                            <li><a href="import-export.html">📦 Import &amp; Export</a></li>
+                            <li><a href="iso.html">🏅 ISO</a></li>
+                            <li><a href="blog.html">📖 Blog</a></li>
+                            <li><a href="contact.html">📬 Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#fssai">🍽️ FSSAI</a></li>
+                            <li><a href="services.html#dsc">🔏 DSC</a></li>
+                            <li><a href="services.html#iec">🌐 IEC</a></li>
+                            <li><a href="services.html#rcmc">📋 RCMC</a></li>
+                            <li><a href="services.html#icegate">🚢 ICEGATE</a></li>
+                            <li><a href="services.html#port">⚓ Port</a></li>
+                            <li><a href="services.html#adcode">🏦 AD Code</a></li>
+                            <li><a href="services.html#ifsc">💳 IFSC</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><span class="icon">📍</span><span>A-502 Pragati IT Park, Mota Varachha, Surat –
+                                    394105</span></li>
+                            <li><span class="icon">📞</span><a href="tel:+919099665509">+91 90996 65509</a></li>
+                            <li><span class="icon">💬</span><a href="https://wa.me/919099665509">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;"><span>©
+                    2026 Yuva Consultancy. All Rights Reserved.</span><span><a href="contact.html">Privacy
+                        Policy</a></span></div>
+        </div>
+    </footer>
+    <div class="whatsapp-float"><span class="whatsapp-tooltip">Need help? 💬</span><a href="https://wa.me/919099665509"
+            target="_blank">💬</a></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

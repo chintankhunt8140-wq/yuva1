@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuva Consultancy | Business Registration & Compliance Consulting</title>
+  <meta name="description" content="Yuva Consultancy offers expert business registration, import-export licensing, ISO certification, and international company formation services in India and abroad."/>
+  <meta name="keywords" content="company registration, IEC registration, FSSAI, DSC, ISO certification, import export, Surat consultancy"/>
+  <meta property="og:title" content="Yuva Consultancy | Business Registration Experts"/>
+  <meta property="og:description" content="Professional Company Registration & Compliance Consulting Services"/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    /* ---- HOME PAGE SPECIFICS ---- */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #061530 0%, #0A1F44 55%, #132D5E 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: var(--header-h);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -10%; left: -5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content .badge { margin-bottom: 1.5rem; }
+    .hero-content h1 {
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .hero-content h1 span { color: var(--gold); }
+    .hero-content p {
+      font-size: 1.0625rem;
+      color: rgba(255,255,255,0.78);
+      max-width: 520px;
+      margin-bottom: 2.25rem;
+      line-height: 1.75;
+    }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero-trust {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .trust-pill {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 0.4rem 0.875rem;
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .trust-pill .dot { width:8px; height:8px; background:#4AE07A; border-radius:50%; }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: var(--transition);
+    }
+    .hero-card:hover { background: rgba(255,255,255,0.11); transform:translateX(4px); }
+    .hero-card-icon {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .hero-card strong { display:block; color:var(--white); font-size:0.9375rem; font-weight:600; }
+    .hero-card span { font-size:0.8125rem; color:rgba(255,255,255,0.6); }
+
+    /* Services Section */
+    .services-intro {
+      background: var(--off-white);
+    }
+
+    /* International */
+    .intl-section {
+      background: linear-gradient(180deg, var(--off-white) 0%, var(--white) 100%);
+    }
+
+    /* Process */
+    .process-connector {
+      position: relative;
+    }
+    .process-connector::before {
+      content: '';
+      position: absolute;
+      top: 52px;
+      left: calc(50% / 3 + 16.66%);
+      right: calc(50% / 3 + 16.66%);
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+      z-index: 0;
+    }
+    .step-card { position: relative; z-index: 1; }
+
+    /* Why Us */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1.75rem;
+    }
+
+    @media (max-width:900px) {
+      .hero-grid { grid-template-columns:1fr; gap:3rem; }
+      .hero-visual { display:none; }
+      .hero-content h1 { font-size: 2.25rem; }
+      .process-connector::before { display:none; }
+      .testimonial-grid { grid-template-columns:1fr; }
+      .why-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏛️</div>
+        <div class="logo-text">
+          <strong>Yuva Consultancy</strong>
+          <span>Business &amp; Compliance Experts</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <a href="services.html#fssai"><span class="icon">🍽️</span>FSSAI Registration</a>
+            <a href="services.html#dsc"><span class="icon">🔏</span>DSC Signature</a>
+            <a href="services.html#iec"><span class="icon">🌐</span>IEC Registration</a>
+            <a href="services.html#rcmc"><span class="icon">📋</span>RCMC Registration</a>
+            <a href="services.html#icegate"><span class="icon">🚢</span>ICEGATE Registration</a>
+            <a href="services.html#port"><span class="icon">⚓</span>Port Registration</a>
+            <a href="services.html#adcode"><span class="icon">🏦</span>AD Code Registration</a>
+            <a href="services.html#ifsc"><span class="icon">💳</span>IFSC Registration</a>
+          </div>
+        </div>
+        <a href="international.html">International</a>
+        <a href="import-export.html">Import &amp; Export</a>
+        <a href="iso.html">ISO</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="tel:+919099665509" class="call-btn">
+          <span class="dot"></span>
+          📞 +91 90996 65509
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="section-head">Navigation</div>
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👥 About Us</a>
+  <div class="section-head">Services</div>
+  <a href="services.html#fssai">🍽️ FSSAI Registration</a>
+  <a href="services.html#dsc">🔏 DSC Signature</a>
+  <a href="services.html#iec">🌐 IEC Registration</a>
+  <a href="services.html#rcmc">📋 RCMC Registration</a>
+  <a href="services.html#icegate">🚢 ICEGATE Registration</a>
+  <a href="services.html#port">⚓ Port Registration</a>
+  <a href="services.html#adcode">🏦 AD Code Registration</a>
+  <a href="services.html#ifsc">💳 IFSC Registration</a>
+  <div class="section-head">More</div>
+  <a href="international.html">🌍 International Registration</a>
+  <a href="import-export.html">📦 Import &amp; Export</a>
+  <a href="iso.html">🏅 ISO Certification</a>
+  <a href="blog.html">📖 Blog</a>
+  <a href="contact.html">📬 Contact</a>
+  <div style="padding:1.25rem 0;">
+    <a href="tel:+919099665509" class="btn btn-navy" style="width:100%;justify-content:center;">📞 Call Now</a>
+  </div>
+  <a href="https://wa.me/919099665509" class="btn btn-whatsapp" style="width:100%;justify-content:center;margin-top:0.5rem;">💬 WhatsApp</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="badge">🏆 &nbsp;Trusted by 5,000+ Businesses Across India</div>
+        <h1>Start Your Business &amp; <span>Export Globally</span></h1>
+        <p>Professional Company Registration &amp; Compliance Consulting Services. From FSSAI to IEC, ISO to International Company Formation — we handle it all.</p>
+        <div class="hero-btns">
+          <a href="tel:+919099665509" class="btn btn-primary btn-lg">📞 Call Now</a>
+          <a href="https://wa.me/919099665509?text=Hello%20Yuva%20Consultancy!%20I%20need%20a%20free%20consultation." target="_blank" class="btn btn-outline btn-lg">💬 WhatsApp Consultation</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-pill"><span class="dot"></span> ISO 9001 Certified Team</div>
+          <div class="trust-pill">⚡ 48-Hour Processing</div>
+          <div class="trust-pill">🔒 100% Confidential</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🌐</div>
+          <div><strong>IEC Registration</strong><span>Import Export Code from DGFT</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🏢</div>
+          <div><strong>USA Company Registration</strong><span>LLC Formation in Delaware</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🏅</div>
+          <div><strong>ISO Certification</strong><span>ISO 9001, 14001 &amp; more</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🍽️</div>
+          <div><strong>FSSAI License</strong><span>Food Safety &amp; Standards Authority</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🚢</div>
+          <div><strong>Port &amp; ICEGATE</strong><span>Customs Electronic Gateway</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS BAR ========== -->
+<section class="section-sm">
+  <div class="container">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="5000" data-suffix="+">0+</span></div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="10" data-suffix="+">0+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="25" data-suffix="+">0+</span></div>
+        <div class="stat-label">Services Offered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="98" data-suffix="%">0%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="section services-intro">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">Complete Compliance &amp; Registration Solutions</h2>
+      <p class="section-sub">One-stop destination for all your business registration, licensing, and compliance needs across India.</p>
+    </div>
+    <div class="grid-auto">
+      <div class="card reveal" id="fssai">
+        <div class="service-icon">🍽️</div>
+        <h3>FSSAI Registration</h3>
+        <p>Food Safety &amp; Standards Authority of India license for food businesses, manufacturers &amp; exporters.</p>
+        <a href="services.html#fssai" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="dsc">
+        <div class="service-icon">🔏</div>
+        <h3>DSC Signature</h3>
+        <p>Digital Signature Certificate for e-filing, tenders, MCA, GST and all government portals.</p>
+        <a href="services.html#dsc" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="iec">
+        <div class="service-icon">🌐</div>
+        <h3>IEC Registration</h3>
+        <p>Import Export Code from DGFT — mandatory for importing/exporting goods and services from India.</p>
+        <a href="services.html#iec" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="rcmc">
+        <div class="service-icon">📋</div>
+        <h3>RCMC Registration</h3>
+        <p>Registration Cum Membership Certificate from Export Promotion Councils for export incentives.</p>
+        <a href="services.html#rcmc" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="icegate">
+        <div class="service-icon">🚢</div>
+        <h3>ICEGATE Registration</h3>
+        <p>Indian Customs EDI Gateway registration for seamless customs filing and clearance.</p>
+        <a href="services.html#icegate" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="port">
+        <div class="service-icon">⚓</div>
+        <h3>Port Registration</h3>
+        <p>Port user registration for import-export at Indian ports including JNPT, Mundra &amp; more.</p>
+        <a href="services.html#port" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="adcode">
+        <div class="service-icon">🏦</div>
+        <h3>AD Code Registration</h3>
+        <p>Authorised Dealer Code registration at customs for receiving foreign exchange payments.</p>
+        <a href="services.html#adcode" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal" id="ifsc">
+        <div class="service-icon">💳</div>
+        <h3>IFSC Registration</h3>
+        <p>Indian Financial System Code registration for international banking &amp; SWIFT transfers.</p>
+        <a href="services.html#ifsc" class="card-link">Learn More →</a>
+      </div>
+      <div class="card reveal">
+        <div class="service-icon">🏅</div>
+        <h3>ISO Certificates</h3>
+        <p>ISO 9001, ISO 14001, ISO 22000, ISO 45001 &amp; more certifications for quality assurance.</p>
+        <a href="iso.html" class="card-link">Learn More →</a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="services.html" class="btn btn-navy">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INTERNATIONAL ========== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">Go Global</span>
+      <h2 class="section-title">International Business Setup</h2>
+      <p class="section-sub">Register your company in the world's most business-friendly jurisdictions with complete documentation support.</p>
+    </div>
+    <div class="grid-auto">
+      <a href="international.html#usa" class="country-card reveal">
+        <div class="country-flag">🇺🇸</div>
+        <h3>USA Company</h3>
+        <p>LLC &amp; Corporation formation in Delaware, Wyoming &amp; more</p>
+      </a>
+      <a href="international.html#uk" class="country-card reveal">
+        <div class="country-flag">🇬🇧</div>
+        <h3>UK Company</h3>
+        <p>Private Limited Company registration in England &amp; Wales</p>
+      </a>
+      <a href="international.html#dubai" class="country-card reveal">
+        <div class="country-flag">🇦🇪</div>
+        <h3>Dubai Company</h3>
+        <p>Free Zone &amp; Mainland company setup in UAE</p>
+      </a>
+      <a href="international.html#canada" class="country-card reveal">
+        <div class="country-flag">🇨🇦</div>
+        <h3>Canada Company</h3>
+        <p>Federal &amp; Provincial incorporation across Canada</p>
+      </a>
+      <a href="international.html#australia" class="country-card reveal">
+        <div class="country-flag">🇦🇺</div>
+        <h3>Australia Company</h3>
+        <p>Pty Ltd company registration with ASIC</p>
+      </a>
+      <a href="international.html#hongkong" class="country-card reveal">
+        <div class="country-flag">🇭🇰</div>
+        <h3>Hong Kong Company</h3>
+        <p>Private Limited company — Asia's premier business hub</p>
+      </a>
+    </div>
+    <div class="text-center mt-4">
+      <a href="international.html" class="btn btn-primary">Explore Global Options</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section class="section section-bg">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">Simple 3-Step Process</h2>
+      <p class="section-sub">Getting your business registered is easier than you think. Our streamlined process ensures fast, accurate results.</p>
+    </div>
+    <div class="grid-3 process-connector">
+      <div class="step-card reveal">
+        <div class="step-number">01</div>
+        <h3>Free Consultation</h3>
+        <p>Talk to our expert consultants to understand the right registrations and licenses for your business type and goals.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number">02</div>
+        <h3>Documentation</h3>
+        <p>We guide you through every document required, prepare your application, and ensure everything is error-free before filing.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number">03</div>
+        <h3>Registration Completed</h3>
+        <p>Sit back while we process your application. You receive your certificates and registrations — fully done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY CHOOSE US ========== -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="reveal">
+        <span class="section-label">Why Yuva Consultancy</span>
+        <h2 class="section-title">Why 5,000+ Businesses Trust Us</h2>
+        <p style="color:var(--text-light);margin-bottom:2rem;">We combine deep regulatory expertise with exceptional client service to deliver outcomes that others can't match.</p>
+        <div class="why-grid">
+          <div class="feature-item">
+            <div class="feature-icon">👨‍💼</div>
+            <div>
+              <h3>Expert Consultants</h3>
+              <p>CA, CS &amp; legal professionals with 10+ years of experience.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <h3>Fast Processing</h3>
+              <p>Most registrations completed within 48-72 business hours.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <div>
+              <h3>Affordable Pricing</h3>
+              <p>Transparent pricing with no hidden charges. Best value guaranteed.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🤝</div>
+            <div>
+              <h3>Dedicated Support</h3>
+              <p>Dedicated relationship manager for every client, always reachable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1rem;">
+        <div style="background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:2rem;border-radius:var(--radius-lg);color:white;text-align:center;">
+          <div style="font-size:3rem;margin-bottom:0.75rem;">🏆</div>
+          <h3 style="color:white;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:0.5rem;">Award-Winning Service</h3>
+          <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;">Recognised as one of Gujarat's most trusted business consulting firms</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div class="card text-center">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">📜</div>
+            <div style="font-size:1.75rem;font-weight:800;color:var(--navy);font-family:'Playfair Display',serif;">50+</div>
+            <div style="font-size:0.8125rem;color:var(--text-light);">Types of Registrations</div>
+          </div>
+          <div class="card text-center">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">🌍</div>
+            <div style="font-size:1.75rem;font-weight:800;color:var(--navy);font-family:'Playfair Display',serif;">6+</div>
+            <div style="font-size:0.8125rem;color:var(--text-light);">Countries Covered</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section section-bg">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">Testimonials</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-sub">Real words from real business owners who trusted Yuva Consultancy to handle their compliance journey.</p>
+    </div>
+    <div class="testimonial-grid testimonial-slider">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Yuva Consultancy made our IEC registration completely hassle-free. The team guided us step by step and we got our code within 2 days. Highly recommended!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div>
+            <div class="author-name">Rajesh Kumar</div>
+            <div class="author-role">Textile Exporter, Surat</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">I needed to set up a company in Dubai and Yuva Consultancy handled everything — from documentation to bank account opening. Exceptional service!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PM</div>
+          <div>
+            <div class="author-name">Priya Mehta</div>
+            <div class="author-role">Business Owner, Ahmedabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Our ISO 9001 certification was processed smoothly. Yuva Consultancy's team is very professional and keeps you informed at every step. 10/10!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AS</div>
+          <div>
+            <div class="author-name">Amit Shah</div>
+            <div class="author-role">Manufacturing Unit, Baroda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <span class="section-label">Free Consultation</span>
+      <h2>Get Free Business Consultation Today</h2>
+      <p>Speak with our expert consultants — no obligations, no charges. Discover the right compliance path for your business.</p>
+      <div class="btn-group">
+        <a href="tel:+919099665509" class="btn btn-primary btn-lg">📞 Call +91 90996 65509</a>
+        <a href="https://wa.me/919099665509?text=Hi%20Yuva%20Consultancy!%20I%20need%20a%20free%20consultation." target="_blank" class="btn btn-outline btn-lg">💬 WhatsApp Us Now</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">📬 Get a Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT INFO STRIP ========== -->
+<section class="section-sm section-navy">
+  <div class="container">
+    <div class="grid-3" style="gap:1.25rem;">
+      <div class="info-card">
+        <div class="icon-box">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+919099665509">+91 90996 65509</a></p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="icon-box">💬</div>
+        <div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/919099665509" target="_blank">Chat with Us Now</a></p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="icon-box">📍</div>
+        <div>
+          <h4>Office Address</h4>
+          <p>A-502 Pragati IT Park, Near AR Mall, Mota Varachha, Surat – 394105</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🏛️</div>
+            <div class="logo-text">
+              <strong>Yuva Consultancy</strong>
+              <span>Business &amp; Compliance Experts</span>
+            </div>
+          </a>
+          <p class="footer-about">Your trusted partner for business registration, compliance, and international company formation. Serving 5,000+ businesses across India and 6+ countries.</p>
+          <div class="footer-social">
+            <div class="social-btn">📘</div>
+            <div class="social-btn">💼</div>
+            <div class="social-btn">📸</div>
+            <div class="social-btn">▶️</div>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">👥 About Us</a></li>
+            <li><a href="services.html">📋 Services</a></li>
+            <li><a href="international.html">🌍 International</a></li>
+            <li><a href="import-export.html">📦 Import &amp; Export</a></li>
+            <li><a href="iso.html">🏅 ISO Certification</a></li>
+            <li><a href="blog.html">📖 Blog</a></li>
+            <li><a href="contact.html">📬 Contact</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#fssai">🍽️ FSSAI Registration</a></li>
+            <li><a href="services.html#dsc">🔏 DSC Signature</a></li>
+            <li><a href="services.html#iec">🌐 IEC Registration</a></li>
+            <li><a href="services.html#rcmc">📋 RCMC Registration</a></li>
+            <li><a href="services.html#icegate">🚢 ICEGATE</a></li>
+            <li><a href="services.html#port">⚓ Port Registration</a></li>
+            <li><a href="services.html#adcode">🏦 AD Code</a></li>
+            <li><a href="services.html#ifsc">💳 IFSC Registration</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <span class="icon">📍</span>
+              <span>A-502 Pragati IT Park, Near AR Mall, Mota Varachha, Surat – 394105</span>
+            </li>
+            <li>
+              <span class="icon">📞</span>
+              <a href="tel:+919099665509">+91 90996 65509</a>
+            </li>
+            <li>
+              <span class="icon">💬</span>
+              <a href="https://wa.me/919099665509" target="_blank">WhatsApp Consultation</a>
+            </li>
+            <li>
+              <span class="icon">🕐</span>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <span>© 2026 Yuva Consultancy. All Rights Reserved.</span>
+      <span>Built with ❤️ for Indian Businesses | <a href="contact.html">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== WHATSAPP FLOAT ========== -->
+<div class="whatsapp-float">
+  <span class="whatsapp-tooltip">Chat with us! 💬</span>
+  <a href="https://wa.me/919099665509?text=Hello%20Yuva%20Consultancy!%20I%20need%20business%20consultation." target="_blank" aria-label="WhatsApp">💬</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

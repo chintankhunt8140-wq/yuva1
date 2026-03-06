@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Yuva Consultancy — Business Registration Knowledge Center</title>
+    <meta name="description"
+        content="Explore expert articles on company registration, import-export compliance, ISO certification, and international business from Yuva Consultancy's knowledge center." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+        }
+
+        .blog-sidebar {
+            position: sticky;
+            top: calc(var(--header-h) + 1.5rem);
+        }
+
+        .sidebar-widget {
+            background: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-widget h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            color: var(--text-light);
+            padding: 0.375rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8125rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background: var(--navy);
+            color: var(--white);
+            border-color: var(--navy);
+        }
+
+        .recent-post {
+            display: flex;
+            gap: 0.875rem;
+            padding: 0.875rem 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .recent-post:last-child {
+            border-bottom: none;
+        }
+
+        .recent-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--off-white);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.375rem;
+            flex-shrink: 0;
+        }
+
+        .recent-post strong {
+            display: block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .recent-post span {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        .main-blog-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media (max-width: 900px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .main-blog-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏛️</div>
+                    <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
+                            Experts</span></div>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Home</a><a href="about.html">About</a>
+                    <div class="nav-item"><a href="services.html">Services</a>
+                        <div class="dropdown">
+                            <a href="services.html#fssai"><span class="icon">🍽️</span>FSSAI</a>
+                            <a href="services.html#iec"><span class="icon">🌐</span>IEC</a>
+                            <a href="services.html#dsc"><span class="icon">🔏</span>DSC</a>
+                        </div>
+                    </div>
+                    <a href="international.html">International</a><a href="import-export.html">Import &amp; Export</a>
+                    <a href="iso.html">ISO</a><a href="blog.html" class="active">Blog</a><a
+                        href="contact.html">Contact</a>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+919099665509" class="call-btn"><span class="dot"></span> 📞 +91 90996 65509</a>
+                    <a href="contact.html" class="btn btn-primary btn-sm">Free Quote</a>
+                    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">🏠 Home</a><a href="about.html">👥 About</a>
+        <a href="services.html">📋 Services</a><a href="international.html">🌍 International</a>
+        <a href="import-export.html">📦 Import &amp; Export</a><a href="iso.html">🏅 ISO</a>
+        <a href="blog.html">📖 Blog</a><a href="contact.html">📬 Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label">Knowledge Center</span>
+            <h1>Business Registration Blog</h1>
+            <p>Expert insights, compliance guides, and business advice to help you navigate India's regulatory landscape
+                and grow globally.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Blog</span></div>
+        </div>
+    </section>
+
+    <!-- FEATURED POST -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="reveal"
+                style="background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:var(--radius-xl);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:320px;">
+                <div style="padding:3rem;display:flex;flex-direction:column;justify-content:center;">
+                    <span class="section-label" style="color:var(--gold-light);">Featured Article</span>
+                    <h2 style="color:white;font-size:1.875rem;margin-bottom:1rem;">Complete IEC Registration Guide for
+                        Indian Exporters 2026</h2>
+                    <p style="color:rgba(255,255,255,0.75);margin-bottom:1.5rem;font-size:0.9375rem;">Everything you
+                        need to know about getting your Import Export Code from DGFT — documents, process, fees, and
+                        common mistakes to avoid.</p>
+                    <div style="display:flex;align-items:center;gap:1rem;">
+                        <a href="contact.html" class="btn btn-primary btn-sm">Read Guide →</a>
+                        <span style="color:rgba(255,255,255,0.5);font-size:0.8125rem;">📅 March 2026 &nbsp;·&nbsp; 8 min
+                            read</span>
+                    </div>
+                </div>
+                <div
+                    style="background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;font-size:5rem;padding:2rem;">
+                    🌐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG MAIN -->
+    <section class="section">
+        <div class="container">
+            <div class="main-blog-layout">
+                <!-- Posts -->
+                <div>
+                    <div class="blog-grid">
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🍽️</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">FSSAI</span>
+                                <h3>FSSAI Registration vs FSSAI License — What's the Difference?</h3>
+                                <p>Understanding which FSSAI document your food business needs and how to apply for it
+                                    step by step.</p>
+                                <div class="blog-meta"><span>📅 Feb 2026</span><span>·</span><span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🇺🇸</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">International</span>
+                                <h3>Why Indian Entrepreneurs Are Registering Companies in Delaware</h3>
+                                <p>The tax advantages, investment benefits, and practical reasons why Delaware LLC is
+                                    the go-to for Indian founders.</p>
+                                <div class="blog-meta"><span>📅 Feb 2026</span><span>·</span><span>6 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🏅</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">ISO Certification</span>
+                                <h3>ISO 9001 vs ISO 14001 — Which Does Your Business Need?</h3>
+                                <p>A comparison of the two most popular ISO standards and when to apply for one, the
+                                    other, or both.</p>
+                                <div class="blog-meta"><span>📅 Jan 2026</span><span>·</span><span>4 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🔏</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">DSC</span>
+                                <h3>Class 2 vs Class 3 DSC — Which Digital Signature Do You Need?</h3>
+                                <p>A simple guide to understand which DSC class is required for different government
+                                    portals and purposes.</p>
+                                <div class="blog-meta"><span>📅 Jan 2026</span><span>·</span><span>3 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🇦🇪</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">International</span>
+                                <h3>Dubai Free Zone vs Mainland Company — Which Is Right for You?</h3>
+                                <p>Key differences between Free Zone and Mainland company setup in UAE for Indian
+                                    entrepreneurs.</p>
+                                <div class="blog-meta"><span>📅 Dec 2025</span><span>·</span><span>7 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">📋</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">Export</span>
+                                <h3>RCMC Registration — Complete Guide for Indian Exporters</h3>
+                                <p>How to get your RCMC from the right Export Promotion Council and access government
+                                    export incentives.</p>
+                                <div class="blog-meta"><span>📅 Dec 2025</span><span>·</span><span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🚢</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">ICEGATE</span>
+                                <h3>How to Register on ICEGATE — Step by Step Guide 2026</h3>
+                                <p>A detailed walkthrough of the ICEGATE registration process for first-time exporters
+                                    in India.</p>
+                                <div class="blog-meta"><span>📅 Nov 2025</span><span>·</span><span>6 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🏦</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">AD Code</span>
+                                <h3>What is AD Code and Why Every Exporter Needs It?</h3>
+                                <p>Understanding the Authorised Dealer Code, why it is mandatory, and how to register it
+                                    at the port of export.</p>
+                                <div class="blog-meta"><span>📅 Nov 2025</span><span>·</span><span>4 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card reveal">
+                            <div class="blog-card-img">🌿</div>
+                            <div class="blog-card-body">
+                                <span class="blog-tag">Compliance</span>
+                                <h3>Top 5 GST Mistakes Exporters Makes and How to Avoid Them</h3>
+                                <p>Common GST errors that cost exporters money and time — and the simple steps to avoid
+                                    each one.</p>
+                                <div class="blog-meta"><span>📅 Oct 2025</span><span>·</span><span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div style="display:flex;gap:0.5rem;justify-content:center;margin-top:3rem;" class="reveal">
+                        <button
+                            style="width:40px;height:40px;border-radius:var(--radius-sm);background:var(--navy);color:white;border:none;font-weight:700;cursor:pointer;">1</button>
+                        <button
+                            style="width:40px;height:40px;border-radius:var(--radius-sm);background:var(--light-gray);border:none;cursor:pointer;font-weight:500;">2</button>
+                        <button
+                            style="width:40px;height:40px;border-radius:var(--radius-sm);background:var(--light-gray);border:none;cursor:pointer;font-weight:500;">3</button>
+                        <button
+                            style="width:40px;height:40px;border-radius:var(--radius-sm);background:var(--light-gray);border:none;cursor:pointer;">→</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <!-- Search -->
+                    <div class="sidebar-widget">
+                        <h4>Search Articles</h4>
+                        <div style="display:flex;gap:0.5rem;">
+                            <input type="text" placeholder="Search..."
+                                style="flex:1;padding:0.625rem 1rem;border:1.5px solid var(--light-gray);border-radius:var(--radius-md);font-family:'Inter',sans-serif;font-size:0.875rem;outline:none;" />
+                            <button class="btn btn-navy btn-sm">🔍</button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li
+                                style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--light-gray);font-size:0.875rem;">
+                                <a href="#" style="color:var(--navy);">🌐 IEC &amp; Export</a><span
+                                    class="badge">12</span></li>
+                            <li
+                                style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--light-gray);font-size:0.875rem;">
+                                <a href="#" style="color:var(--navy);">🍽️ FSSAI</a><span class="badge">8</span></li>
+                            <li
+                                style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--light-gray);font-size:0.875rem;">
+                                <a href="#" style="color:var(--navy);">🌍 International</a><span class="badge">10</span>
+                            </li>
+                            <li
+                                style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--light-gray);font-size:0.875rem;">
+                                <a href="#" style="color:var(--navy);">🏅 ISO Certification</a><span
+                                    class="badge">6</span></li>
+                            <li style="display:flex;justify-content:space-between;padding:0.5rem 0;font-size:0.875rem;">
+                                <a href="#" style="color:var(--navy);">📋 Compliance</a><span class="badge">15</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Tags</h4>
+                        <div class="tag-cloud">
+                            <span class="tag">IEC</span><span class="tag">FSSAI</span><span class="tag">ISO 9001</span>
+                            <span class="tag">DSC</span><span class="tag">RCMC</span><span class="tag">Dubai</span>
+                            <span class="tag">USA LLC</span><span class="tag">ICEGATE</span><span
+                                class="tag">Export</span>
+                            <span class="tag">GST</span><span class="tag">AD Code</span><span class="tag">UK Ltd</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Widget -->
+                    <div class="sidebar-widget"
+                        style="background:linear-gradient(135deg,var(--navy),var(--navy-light));border-color:transparent;text-align:center;">
+                        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🤝</div>
+                        <h4 style="color:white;">Need Help?</h4>
+                        <p style="font-size:0.875rem;color:rgba(255,255,255,0.75);margin-bottom:1rem;">Get a free
+                            consultation from our experts today.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm"
+                            style="width:100%;justify-content:center;">📬 Free Consultation</a>
+                        <a href="https://wa.me/919099665509" class="btn btn-whatsapp btn-sm"
+                            style="width:100%;justify-content:center;margin-top:0.5rem;">💬 WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section-bg">
+        <div class="container">
+            <div style="max-width:580px;margin:0 auto;text-align:center;" class="reveal">
+                <span class="section-label">Stay Updated</span>
+                <h2 class="section-title">Subscribe to Our Newsletter</h2>
+                <p class="section-sub">Get the latest compliance updates, regulatory changes, and business tips
+                    delivered to your inbox.</p>
+                <div style="display:flex;gap:0.75rem;max-width:440px;margin:0 auto;flex-wrap:wrap;">
+                    <input type="email" placeholder="Enter your email address"
+                        style="flex:1;min-width:200px;padding:0.875rem 1.125rem;border:1.5px solid var(--light-gray);border-radius:50px;font-family:'Inter',sans-serif;font-size:0.9375rem;outline:none;" />
+                    <button class="btn btn-primary">Subscribe →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand"><a href="index.html" class="logo">
+                            <div class="logo-icon">🏛️</div>
+                            <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
+                                    Experts</span></div>
+                        </a>
+                        <p class="footer-about">Your trusted partner for business registration, compliance, and
+                            international company formation.</p>
+                        <div class="footer-social">
+                            <div class="social-btn">📘</div>
+                            <div class="social-btn">💼</div>
+                            <div class="social-btn">📸</div>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Blog Topics</h4>
+                        <ul>
+                            <li><a href="#">🌐 IEC &amp; Export</a></li>
+                            <li><a href="#">🍽️ FSSAI Guides</a></li>
+                            <li><a href="#">🌍 International</a></li>
+                            <li><a href="#">🏅 ISO Certification</a></li>
+                            <li><a href="#">📋 Compliance Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">📋 All Services</a></li>
+                            <li><a href="international.html">🌍 International</a></li>
+                            <li><a href="import-export.html">📦 Import &amp; Export</a></li>
+                            <li><a href="iso.html">🏅 ISO</a></li>
+                            <li><a href="contact.html">📬 Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><span class="icon">📍</span><span>A-502 Pragati IT Park, Mota Varachha, Surat –
+                                    394105</span></li>
+                            <li><span class="icon">📞</span><a href="tel:+919099665509">+91 90996 65509</a></li>
+                            <li><span class="icon">💬</span><a href="https://wa.me/919099665509">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;"><span>©
+                    2026 Yuva Consultancy. All Rights Reserved.</span><span><a href="contact.html">Privacy
+                        Policy</a></span></div>
+        </div>
+    </footer>
+    <div class="whatsapp-float"><span class="whatsapp-tooltip">Questions? 💬</span><a href="https://wa.me/919099665509"
+            target="_blank">💬</a></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

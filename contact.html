@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Yuva Consultancy — Surat, Gujarat</title>
+    <meta name="description"
+        content="Contact Yuva Consultancy for business registration, IEC, FSSAI, ISO certification, and international company formation services. Located in Mota Varachha, Surat." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info-panel {
+            position: sticky;
+            top: calc(var(--header-h) + 1.5rem);
+        }
+
+        .contact-card-big {
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card-big h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-card-big p {
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 2rem;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .contact-detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .cdi-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(201, 168, 76, 0.2);
+            border: 1px solid rgba(201, 168, 76, 0.4);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .cdi-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.25rem;
+        }
+
+        .cdi-value {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .cdi-value a {
+            color: var(--gold-light);
+        }
+
+        .quick-contact-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .quick-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9375rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .quick-btn:hover {
+            transform: translateX(4px);
+        }
+
+        .quick-btn-call {
+            background: var(--navy);
+            color: white;
+        }
+
+        .quick-btn-call:hover {
+            background: var(--navy-light);
+        }
+
+        .quick-btn-wa {
+            background: #25D366;
+            color: white;
+        }
+
+        .quick-btn-wa:hover {
+            background: #1ebe5c;
+        }
+
+        .form-panel {
+            background: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info-panel {
+                position: static;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏛️</div>
+                    <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
+                            Experts</span></div>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Home</a><a href="about.html">About</a>
+                    <div class="nav-item"><a href="services.html">Services</a>
+                        <div class="dropdown">
+                            <a href="services.html#fssai"><span class="icon">🍽️</span>FSSAI</a>
+                            <a href="services.html#iec"><span class="icon">🌐</span>IEC</a>
+                            <a href="services.html#dsc"><span class="icon">🔏</span>DSC</a>
+                        </div>
+                    </div>
+                    <a href="international.html">International</a><a href="import-export.html">Import &amp; Export</a>
+                    <a href="iso.html">ISO</a><a href="blog.html">Blog</a><a href="contact.html"
+                        class="active">Contact</a>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+919099665509" class="call-btn"><span class="dot"></span> 📞 +91 90996 65509</a>
+                    <a href="https://wa.me/919099665509" target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+                    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">🏠 Home</a><a href="about.html">👥 About</a>
+        <a href="services.html">📋 Services</a><a href="international.html">🌍 International</a>
+        <a href="import-export.html">📦 Import &amp; Export</a><a href="iso.html">🏅 ISO</a>
+        <a href="blog.html">📖 Blog</a><a href="contact.html">📬 Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h1>Contact Yuva Consultancy</h1>
+            <p>Speak with our expert consultants for free. We're ready to help you with business registration,
+                compliance, and international expansion.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Info Panel -->
+                <div class="contact-info-panel reveal">
+                    <div class="contact-card-big">
+                        <h3>Let's Talk Business 🤝</h3>
+                        <p>Our expert team is available Mon–Sat, 9 AM to 7 PM. Reach us anytime via phone or WhatsApp.
+                        </p>
+
+                        <div class="contact-detail-item">
+                            <div class="cdi-icon">📞</div>
+                            <div>
+                                <div class="cdi-label">Phone / WhatsApp</div>
+                                <div class="cdi-value"><a href="tel:+919099665509">+91 90996 65509</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="cdi-icon">📍</div>
+                            <div>
+                                <div class="cdi-label">Office Address</div>
+                                <div class="cdi-value">A-502 Pragati IT Park, Near AR Mall, Mota Varachha, Surat –
+                                    394105, Gujarat</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="cdi-icon">🕐</div>
+                            <div>
+                                <div class="cdi-label">Business Hours</div>
+                                <div class="cdi-value">Mon – Sat: 9:00 AM – 7:00 PM<br /><span
+                                        style="font-size:0.8125rem;color:rgba(255,255,255,0.55);">Sunday: By appointment
+                                        only</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-contact-btns">
+                        <a href="tel:+919099665509" class="quick-btn quick-btn-call">
+                            <span style="font-size:1.5rem;">📞</span>
+                            <div>
+                                <div style="font-size:0.75rem;opacity:0.7;">Call Us Directly</div>
+                                <div>+91 90996 65509</div>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/919099665509?text=Hello%20Yuva%20Consultancy!%20I%20need%20business%20consultation."
+                            target="_blank" class="quick-btn quick-btn-wa">
+                            <span style="font-size:1.5rem;">💬</span>
+                            <div>
+                                <div style="font-size:0.75rem;opacity:0.85;">WhatsApp Consultation</div>
+                                <div>Chat with an expert now</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Services Quick Pick -->
+                    <div
+                        style="margin-top:1.5rem;background:var(--off-white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--light-gray);">
+                        <h4
+                            style="font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:700;color:var(--navy);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.05em;">
+                            Popular Services</h4>
+                        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                            <span class="tag" style="cursor:default;">🌐 IEC Registration</span>
+                            <span class="tag" style="cursor:default;">🍽️ FSSAI</span>
+                            <span class="tag" style="cursor:default;">🔏 DSC</span>
+                            <span class="tag" style="cursor:default;">🏅 ISO 9001</span>
+                            <span class="tag" style="cursor:default;">🇺🇸 USA Company</span>
+                            <span class="tag" style="cursor:default;">🇦🇪 Dubai Setup</span>
+                            <span class="tag" style="cursor:default;">📋 RCMC</span>
+                            <span class="tag" style="cursor:default;">⚓ Port Registration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="form-panel reveal">
+                    <span class="section-label">Send a Message</span>
+                    <h2 style="font-size:1.75rem;margin-bottom:0.5rem;">Get Your Free Consultation</h2>
+                    <p style="color:var(--text-light);margin-bottom:2rem;">Fill in the form below and our team will get
+                        back to you within 1 business hour.</p>
+
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Rajesh Kumar" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" />
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Surat, Gujarat" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select a Service --</option>
+                                <optgroup label="Domestic Services">
+                                    <option>FSSAI Registration / License</option>
+                                    <option>DSC — Digital Signature Certificate</option>
+                                    <option>IEC — Import Export Code</option>
+                                    <option>RCMC Registration</option>
+                                    <option>ICEGATE Registration</option>
+                                    <option>Port Registration</option>
+                                    <option>AD Code Registration</option>
+                                    <option>IFSC Registration</option>
+                                </optgroup>
+                                <optgroup label="ISO Certification">
+                                    <option>ISO 9001 — Quality Management</option>
+                                    <option>ISO 14001 — Environmental</option>
+                                    <option>ISO 22000 — Food Safety</option>
+                                    <option>ISO 45001 — Safety</option>
+                                    <option>ISO 27001 — Information Security</option>
+                                    <option>Other ISO Standard</option>
+                                </optgroup>
+                                <optgroup label="International Registration">
+                                    <option>USA Company Registration</option>
+                                    <option>UK Company Registration</option>
+                                    <option>Dubai / UAE Company Registration</option>
+                                    <option>Canada Company Registration</option>
+                                    <option>Australia Company Registration</option>
+                                    <option>Hong Kong Company Registration</option>
+                                </optgroup>
+                                <option>Other / General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Requirements</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your business and what you need help with..."></textarea>
+                        </div>
+
+                        <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;">
+                            <input type="checkbox" id="consent" name="consent" style="width:auto;margin-top:0.3rem;"
+                                required />
+                            <label for="consent"
+                                style="font-weight:400;font-size:0.875rem;color:var(--text-light);margin:0;">I agree to
+                                be contacted by Yuva Consultancy via phone/WhatsApp regarding my inquiry. I understand
+                                my data will be kept confidential.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+                            📬 &nbsp;Send Message &amp; Get Free Consultation
+                        </button>
+
+                        <p style="font-size:0.8125rem;color:var(--gray);text-align:center;margin-top:1rem;">🔒 Your
+                            information is 100% confidential &nbsp;·&nbsp; We respond within 1 business hour</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="section-sm section-bg">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom:2rem;">
+                <span class="section-label">Find Us</span>
+                <h2 class="section-title">Our Office Location</h2>
+                <p style="color:var(--text-light);">A-502 Pragati IT Park, Near AR Mall, Mota Varachha, Surat – 394105,
+                    Gujarat</p>
+            </div>
+            <div class="map-wrap reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8!2d72.9!3d21.23!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f8fae!2sPragati+IT+Park%2C+Mota+Varachha%2C+Surat%2C+Gujarat+394105!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Yuva Consultancy Location — Pragati IT Park, Mota Varachha, Surat">
+                </iframe>
+            </div>
+            <div class="grid-3 mt-4">
+                <a href="https://maps.google.com/?q=Pragati+IT+Park+Mota+Varachha+Surat" target="_blank"
+                    class="btn btn-navy" style="justify-content:center;">📍 Open in Google Maps</a>
+                <a href="tel:+919099665509" class="btn btn-primary" style="justify-content:center;">📞 Call for
+                    Directions</a>
+                <a href="https://wa.me/919099665509?text=Hi!%20I%20need%20directions%20to%20your%20office."
+                    target="_blank" class="btn btn-whatsapp" style="justify-content:center;">💬 WhatsApp for
+                    Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CONTACT -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Why Reach Out</span>
+                <h2 class="section-title">What Happens After You Contact Us</h2>
+            </div>
+            <div class="grid-3">
+                <div class="step-card reveal">
+                    <div class="step-number">01</div>
+                    <h3>Instant Response</h3>
+                    <p>Our team responds within 1 business hour via call or WhatsApp to understand your requirements.
+                    </p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">02</div>
+                    <h3>Free Consultation</h3>
+                    <p>We provide a free, no-obligation consultation call to discuss the best solutions for your
+                        business.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">03</div>
+                    <h3>Custom Proposal</h3>
+                    <p>You receive a transparent, customised proposal with clear pricing and timeline — no surprises.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-sm section-navy">
+        <div class="container">
+            <div class="cta-banner"
+                style="background:transparent;box-shadow:none;border:2px solid rgba(255,255,255,0.1);padding:3rem 2rem;">
+                <span class="section-label">Don't Wait</span>
+                <h2 style="color:white;">Start Your Business Registration Today</h2>
+                <p style="color:rgba(255,255,255,0.8);">Every day of delay costs you opportunities. Get your compliance
+                    sorted in 48 hours.</p>
+                <div class="btn-group">
+                    <a href="tel:+919099665509" class="btn btn-primary btn-lg">📞 +91 90996 65509</a>
+                    <a href="https://wa.me/919099665509" target="_blank" class="btn btn-whatsapp btn-lg">💬 WhatsApp
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand"><a href="index.html" class="logo">
+                            <div class="logo-icon">🏛️</div>
+                            <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
+                                    Experts</span></div>
+                        </a>
+                        <p class="footer-about">Your trusted partner for business registration, compliance, and
+                            international company formation. Serving 5,000+ businesses across India and globally.</p>
+                        <div class="footer-social">
+                            <div class="social-btn">📘</div>
+                            <div class="social-btn">💼</div>
+                            <div class="social-btn">📸</div>
+                            <div class="social-btn">▶️</div>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">🏠 Home</a></li>
+                            <li><a href="about.html">👥 About</a></li>
+                            <li><a href="services.html">📋 Services</a></li>
+                            <li><a href="international.html">🌍 International</a></li>
+                            <li><a href="import-export.html">📦 Import &amp; Export</a></li>
+                            <li><a href="iso.html">🏅 ISO</a></li>
+                            <li><a href="blog.html">📖 Blog</a></li>
+                            <li><a href="contact.html">📬 Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#fssai">🍽️ FSSAI</a></li>
+                            <li><a href="services.html#dsc">🔏 DSC</a></li>
+                            <li><a href="services.html#iec">🌐 IEC</a></li>
+                            <li><a href="services.html#rcmc">📋 RCMC</a></li>
+                            <li><a href="services.html#icegate">🚢 ICEGATE</a></li>
+                            <li><a href="services.html#adcode">🏦 AD Code</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><span class="icon">📍</span><span>A-502 Pragati IT Park, Near AR Mall, Mota Varachha,
+                                    Surat – 394105</span></li>
+                            <li><span class="icon">📞</span><a href="tel:+919099665509">+91 90996 65509</a></li>
+                            <li><span class="icon">💬</span><a href="https://wa.me/919099665509">WhatsApp
+                                    Consultation</a></li>
+                            <li><span class="icon">🕐</span><span>Mon – Sat: 9 AM – 7 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;"><span>©
+                    2026 Yuva Consultancy. All Rights Reserved.</span><span>Built with ❤️ for Indian Businesses | <a
+                        href="#">Privacy Policy</a></span></div>
+        </div>
+    </footer>
+    <div class="whatsapp-float"><span class="whatsapp-tooltip">Chat now! 💬</span><a href="https://wa.me/919099665509"
+            target="_blank">💬</a></div>
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        /* Tag cloud styles for contact page */
+        .tag {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            color: var(--text-light);
+            padding: 0.375rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8125rem;
+        }
+    </style>
+</body>
+
+</html>
