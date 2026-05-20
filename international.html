@@ -7,8 +7,7 @@
     <title>International Company Registration | Yuva Consultancy — USA, UK, Dubai, Canada</title>
     <meta name="description"
         content="Register your company in USA, UK, Dubai, Canada, Australia, and Hong Kong with expert guidance from Yuva Consultancy. Complete documentation and support." />
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>" />
+    <link rel="icon" href="assets/images/favicon.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
         .country-section {
@@ -28,7 +27,12 @@
         }
 
         .country-flag-lg {
-            font-size: 4rem;
+            width: 80px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
         }
 
         .country-grid {
@@ -106,6 +110,16 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .flag-icon {
+            width: 24px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            border-radius: 2px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 
@@ -116,26 +130,24 @@
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo">
-                    <div class="logo-icon">🏛️</div>
-                    <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
-                            Experts</span></div>
+                    <div class="logo-icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3"></path><path d="M5 21V10"></path><path d="M9 21V10"></path><path d="M15 21V10"></path><path d="M19 21V10"></path><path d="m3 7 9-4 9 4"></path></svg></div>
+                    <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance Experts</span></div>
                 </a>
                 <nav class="nav">
                     <a href="index.html">Home</a><a href="about.html">About</a>
-                    <div class="nav-item"><a href="services.html">Services</a>
+                    <div class="nav-item">
+                        <a href="services.html">Services</a>
                         <div class="dropdown">
-                            <a href="services.html#fssai"><span class="icon">🍽️</span>FSSAI</a>
-                            <a href="services.html#iec"><span class="icon">🌐</span>IEC</a>
-                            <a href="services.html#dsc"><span class="icon">🔏</span>DSC</a>
-                            <a href="services.html#rcmc"><span class="icon">📋</span>RCMC</a>
+                            <a href="services.html#fssai"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2 v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg></span>FSSAI Registration</a>
+                            <a href="services.html#dsc"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>DSC Signature</a>
+                            <a href="services.html#iec"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>IEC Registration</a>
                         </div>
                     </div>
-                    <a href="international.html" class="active">International</a>
-                    <a href="import-export.html">Import &amp; Export</a>
+                    <a href="international.html" class="active">International</a><a href="import-export.html">Import &amp; Export</a>
                     <a href="iso.html">ISO</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
                 </nav>
                 <div class="header-cta">
-                    <a href="tel:+919099665509" class="call-btn"><span class="dot"></span> 📞 +91 90996 65509</a>
+                    <a href="tel:+919099665509" class="call-btn"><span class="dot"></span> <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 90996 65509</a>
                     <a href="contact.html" class="btn btn-primary btn-sm">Free Quote</a>
                     <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
                 </div>
@@ -143,10 +155,9 @@
         </div>
     </header>
     <div class="mobile-nav" id="mobileNav">
-        <a href="index.html">🏠 Home</a><a href="about.html">👥 About</a>
-        <a href="services.html">📋 Services</a><a href="international.html">🌍 International</a>
-        <a href="import-export.html">📦 Import &amp; Export</a><a href="iso.html">🏅 ISO</a>
-        <a href="blog.html">📖 Blog</a><a href="contact.html">📬 Contact</a>
+        <a href="index.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a><a href="about.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> About Us</a>
+        <a href="services.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg> Services</a><a href="international.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> International</a>
+        <a href="import-export.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg> Import &amp; Export</a><a href="iso.html"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> ISO</a>
     </div>
 
     <!-- HERO -->
@@ -154,10 +165,8 @@
         <div class="container">
             <span class="section-label">Go Global</span>
             <h1>International Company Registration</h1>
-            <p>Set up your business in the world's most business-friendly jurisdictions. We handle everything from
-                documentation to bank account opening.</p>
-            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span
-                    class="current">International</span></div>
+            <p>Set up your business in the world's most business-friendly jurisdictions. We handle everything from documentation to bank account opening.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">International</span></div>
         </div>
     </section>
 
@@ -165,12 +174,12 @@
     <section class="section-sm section-bg">
         <div class="container">
             <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;">
-                <a href="#usa" class="btn btn-navy btn-sm">🇺🇸 USA</a>
-                <a href="#uk" class="btn btn-navy btn-sm">🇬🇧 UK</a>
-                <a href="#dubai" class="btn btn-navy btn-sm">🇦🇪 Dubai</a>
-                <a href="#canada" class="btn btn-navy btn-sm">🇨🇦 Canada</a>
-                <a href="#australia" class="btn btn-navy btn-sm">🇦🇺 Australia</a>
-                <a href="#hongkong" class="btn btn-navy btn-sm">🇭🇰 Hong Kong</a>
+                <a href="#usa" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 741 390"><path fill="#bd3d44" d="M0 0h741v390H0z"/><path d="M0 30h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0" fill="#fff"/><path fill="#192f5d" d="M0 0h296.4v210H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><circle id="f" cx="24.7" cy="21" r="1.5"/><use xlink:href="#f" x="49.4"/><use xlink:href="#f" x="98.8"/><use xlink:href="#f" x="148.2"/><use xlink:href="#f" x="197.6"/><use xlink:href="#f" x="247"/></g><use xlink:href="#e" x="-24.7" y="21"/></g><use xlink:href="#c" y="42"/></g><use xlink:href="#d" y="84"/><use xlink:href="#e" y="168"/></g></svg> USA</a>
+                <a href="#uk" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 60 30"><clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="m0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="m0 0 60 30M60 0 0 30" clip-path="url(#a)" stroke="#c8102e" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6"/></svg> UK</a>
+                <a href="#dubai" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 1200 600"><path fill="#00732f" d="M0 0h1200v200H0z"/><path fill="#fff" d="M0 200h1200v200H0z"/><path d="M0 400h1200v200H0z"/><path fill="red" d="M0 0h300v600H0z"/></svg> Dubai</a>
+                <a href="#canada" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 600 300"><path fill="#f00" d="M0 0h600v300H0z"/><path fill="#fff" d="M150 0h300v300H150z"/><path fill="#f00" d="M300 45l8 60 48 4-36 34 16 62-42-36-42 36 16-62-36-34 48-4z"/></svg> Canada</a>
+                <a href="#australia" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 1200 600"><path fill="#00008b" d="M0 0h1200v600H0z"/><path d="M0 0h600v300H0z" fill="#00008b"/><path d="M0 0l600 300M600 0L0 300" stroke="#fff" stroke-width="60"/><path d="M0 0l600 300M600 0L0 300" stroke="#ff0000" stroke-width="40"/><path d="M300 0v300M0 150h600" stroke="#fff" stroke-width="100"/><path d="M300 0v300M0 150h600" stroke="#ff0000" stroke-width="60"/><path fill="#fff" d="M300 420l12 36 38 0-31 22 12 36-31-22-31 22 12-36-31-22 38 0z"/></svg> Australia</a>
+                <a href="#hongkong" class="btn btn-navy btn-sm"><svg class="flag-icon" viewBox="0 0 900 600"><path fill="#ee1c25" d="M0 0h900v600H0z"/><path fill="#fff" d="M450 300l100-80 20 120-100 80-120-20z"/></svg> Hong Kong</a>
             </div>
         </div>
     </section>
@@ -184,22 +193,22 @@
             </div>
             <div class="grid-4 reveal">
                 <div class="card text-center">
-                    <div style="font-size:2rem;margin-bottom:0.75rem;">💰</div>
+                    <div style="margin-bottom:1rem; color:var(--gold);"><svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
                     <h3>Tax Benefits</h3>
                     <p>Access lower corporate tax rates and tax treaties available in foreign jurisdictions.</p>
                 </div>
                 <div class="card text-center">
-                    <div style="font-size:2rem;margin-bottom:0.75rem;">🌍</div>
+                    <div style="margin-bottom:1rem; color:var(--gold);"><svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
                     <h3>Global Credibility</h3>
                     <p>Enhance your brand reputation by operating from premium international business addresses.</p>
                 </div>
                 <div class="card text-center">
-                    <div style="font-size:2rem;margin-bottom:0.75rem;">🏦</div>
+                    <div style="margin-bottom:1rem; color:var(--gold);"><svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M3 10h18"></path><path d="M5 21V10"></path><path d="M9 21V10"></path><path d="M15 21V10"></path><path d="M19 21V10"></path><path d="m3 10 9-7 9 7"></path></svg></div>
                     <h3>USD Banking</h3>
                     <p>Access multi-currency business bank accounts and international payment processors.</p>
                 </div>
                 <div class="card text-center">
-                    <div style="font-size:2rem;margin-bottom:0.75rem;">📈</div>
+                    <div style="margin-bottom:1rem; color:var(--gold);"><svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
                     <h3>Investor Access</h3>
                     <p>Attract global investors and VCs who prefer investing in US or UK incorporated entities.</p>
                 </div>
@@ -214,45 +223,34 @@
             <!-- USA -->
             <div class="country-section reveal" id="usa">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇺🇸</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 741 390"><path fill="#bd3d44" d="M0 0h741v390H0z"/><path d="M0 30h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0" fill="#fff"/><path fill="#192f5d" d="M0 0h296.4v210H0z"/><g fill="#fff"><g id="du"><g id="cu"><g id="eu"><circle id="fu" cx="24.7" cy="21" r="1.5"/><use xlink:href="#fu" x="49.4"/><use xlink:href="#fu" x="98.8"/><use xlink:href="#fu" x="148.2"/><use xlink:href="#fu" x="197.6"/><use xlink:href="#fu" x="247"/></g><use xlink:href="#eu" x="-24.7" y="21"/></g><use xlink:href="#cu" y="42"/></g><use xlink:href="#du" y="84"/><use xlink:href="#eu" y="168"/></g></svg></div>
                     <div>
                         <span class="section-label">North America</span>
                         <h2 style="font-size:2rem;margin:0;">USA Company Registration</h2>
-                        <p style="color:var(--text-light);">LLC &amp; Corporation formation in Delaware, Wyoming, and
-                            all US states</p>
+                        <p style="color:var(--text-light);">LLC &amp; Corporation formation in Delaware, Wyoming, and all US states</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
-                        <p style="color:var(--text-light);margin-bottom:1.5rem;">The United States offers one of the
-                            most business-friendly environments in the world. An LLC in Delaware or Wyoming is the most
-                            popular structure for Indian entrepreneurs looking to enter the US market, raise investment,
-                            or use US payment processors like Stripe and PayPal.</p>
+                        <p style="color:var(--text-light);margin-bottom:1.5rem;">The United States offers one of the most business-friendly environments in the world. An LLC in Delaware or Wyoming is the most popular structure for Indian entrepreneurs looking to enter the US market, raise investment, or use US payment processors like Stripe and PayPal.</p>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> LLC or C-Corp formation in any US state</li>
-                            <li><span class="check">✓</span> EIN (Employer Identification Number) application</li>
-                            <li><span class="check">✓</span> Registered Agent service for 1 year</li>
-                            <li><span class="check">✓</span> US Mailing Address</li>
-                            <li><span class="check">✓</span> US Bank Account guidance (Mercury, Relay, etc.)</li>
-                            <li><span class="check">✓</span> Stripe, PayPal account setup support</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> LLC or C-Corp formation in any US state</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> EIN (Employer Identification Number) application</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Registered Agent service for 1 year</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> US Mailing Address</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> US Bank Account guidance (Mercury, Relay, etc.)</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Stripe, PayPal account setup support</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register US
-                                Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register US Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
-                        <div class="info-row"><span class="label">Popular States</span><span class="val">Delaware,
-                                Wyoming</span></div>
-                        <div class="info-row"><span class="label">Entity Types</span><span class="val">LLC,
-                                C-Corp</span></div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–10 Business
-                                Days</span></div>
-                        <div class="info-row"><span class="label">Physical Presence</span><span class="val">Not
-                                Required</span></div>
-                        <div class="info-row"><span class="label">Annual Report</span><span class="val">Required</span>
-                        </div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹24,999</span></div>
+                        <div class="info-row"><span class="label">Popular States</span><span class="val">Delaware, Wyoming</span></div>
+                        <div class="info-row"><span class="label">Entity Types</span><span class="val">LLC, C-Corp</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–10 Business Days</span></div>
+                        <div class="info-row"><span class="label">Physical Presence</span><span class="val">Not Required</span></div>
+                        <div class="info-row"><span class="label">Annual Report</span><span class="val">Required</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹24,999</span></div>
                     </div>
                 </div>
             </div>
@@ -260,44 +258,34 @@
             <!-- UK -->
             <div class="country-section reveal" id="uk">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇬🇧</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 60 30"><clipPath id="ab"><path d="M0 0v30h60V0z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="m0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="m0 0 60 30M60 0 0 30" clip-path="url(#ab)" stroke="#c8102e" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6"/></svg></div>
                     <div>
                         <span class="section-label">Europe</span>
                         <h2 style="font-size:2rem;margin:0;">UK Company Registration</h2>
-                        <p style="color:var(--text-light);">Private Limited Company registration with Companies House,
-                            England &amp; Wales</p>
+                        <p style="color:var(--text-light);">Private Limited Company registration with Companies House, England &amp; Wales</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
-                        <p style="color:var(--text-light);margin-bottom:1.5rem;">The UK offers a prestigious business
-                            address, access to the European market, and a simple online registration system through
-                            Companies House. A UK Private Limited Company (Ltd) can be set up within 24 hours.</p>
+                        <p style="color:var(--text-light);margin-bottom:1.5rem;">The UK offers a prestigious business address, access to the European market, and a simple online registration system through Companies House. A UK Private Limited Company (Ltd) can be set up within 24 hours.</p>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> Private Limited Company (Ltd) incorporation</li>
-                            <li><span class="check">✓</span> Companies House filing &amp; certificate</li>
-                            <li><span class="check">✓</span> UK Registered Address service</li>
-                            <li><span class="check">✓</span> UK Director service (if required)</li>
-                            <li><span class="check">✓</span> VAT registration guidance</li>
-                            <li><span class="check">✓</span> UK Bank Account (Wise, Revolut) setup</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Private Limited Company (Ltd) incorporation</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Companies House filing &amp; certificate</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> UK Registered Address service</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> UK Director service (if required)</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> VAT registration guidance</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> UK Bank Account (Wise, Revolut) setup</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register UK
-                                Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register UK Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
-                        <div class="info-row"><span class="label">Registration Body</span><span class="val">Companies
-                                House</span></div>
-                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Private Ltd
-                                (Ltd)</span></div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">24–48
-                                Hours</span></div>
-                        <div class="info-row"><span class="label">Physical Presence</span><span class="val">Not
-                                Required</span></div>
-                        <div class="info-row"><span class="label">Tax Rate</span><span class="val">19–25% Corp
-                                Tax</span></div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹19,999</span></div>
+                        <div class="info-row"><span class="label">Registration Body</span><span class="val">Companies House</span></div>
+                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Private Ltd (Ltd)</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">24–48 Hours</span></div>
+                        <div class="info-row"><span class="label">Physical Presence</span><span class="val">Not Required</span></div>
+                        <div class="info-row"><span class="label">Tax Rate</span><span class="val">19–25% Corp Tax</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹19,999</span></div>
                     </div>
                 </div>
             </div>
@@ -305,44 +293,34 @@
             <!-- DUBAI -->
             <div class="country-section reveal" id="dubai">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇦🇪</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 1200 600"><path fill="#00732f" d="M0 0h1200v200H0z"/><path fill="#fff" d="M0 200h1200v200H0z"/><path d="M0 400h1200v200H0z"/><path fill="red" d="M0 0h300v600H0z"/></svg></div>
                     <div>
                         <span class="section-label">Middle East</span>
                         <h2 style="font-size:2rem;margin:0;">Dubai / UAE Company Registration</h2>
-                        <p style="color:var(--text-light);">Free Zone &amp; Mainland company setup in the UAE — 0%
-                            corporate tax</p>
+                        <p style="color:var(--text-light);">Free Zone &amp; Mainland company setup in the UAE — 0% corporate tax</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
-                        <p style="color:var(--text-light);margin-bottom:1.5rem;">Dubai is the gateway to the Middle
-                            East, Africa, and South Asia. With 0% personal income tax and a growing number of Free
-                            Zones, it is an ideal location for trading, consulting, and e-commerce businesses.</p>
+                        <p style="color:var(--text-light);margin-bottom:1.5rem;">Dubai is the gateway to the Middle East, Africa, and South Asia. With 0% personal income tax and a growing number of Free Zones, it is an ideal location for trading, consulting, and e-commerce businesses.</p>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> Free Zone company formation (IFZA, SHAMS, DMCC)</li>
-                            <li><span class="check">✓</span> Mainland DED company registration</li>
-                            <li><span class="check">✓</span> Trade license &amp; Visa assistance</li>
-                            <li><span class="check">✓</span> UAE bank account opening support</li>
-                            <li><span class="check">✓</span> Office address &amp; Ejari registration</li>
-                            <li><span class="check">✓</span> VAT registration in UAE</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Free Zone company formation (IFZA, SHAMS, DMCC)</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Mainland DED company registration</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Trade license &amp; Visa assistance</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> UAE bank account opening support</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Office address &amp; Ejari registration</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> VAT registration in UAE</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register Dubai
-                                Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register Dubai Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
-                        <div class="info-row"><span class="label">Free Zones</span><span class="val">IFZA, SHAMS,
-                                DMCC</span></div>
-                        <div class="info-row"><span class="label">Corporate Tax</span><span class="val">0% (Free
-                                Zone)</span></div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">7–14 Business
-                                Days</span></div>
-                        <div class="info-row"><span class="label">Visa Available</span><span class="val">Yes</span>
-                        </div>
-                        <div class="info-row"><span class="label">Currency</span><span class="val">AED (Dirham)</span>
-                        </div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹49,999</span></div>
+                        <div class="info-row"><span class="label">Free Zones</span><span class="val">IFZA, SHAMS, DMCC</span></div>
+                        <div class="info-row"><span class="label">Corporate Tax</span><span class="val">0% (Free Zone)</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">7–14 Business Days</span></div>
+                        <div class="info-row"><span class="label">Visa Available</span><span class="val">Yes</span></div>
+                        <div class="info-row"><span class="label">Currency</span><span class="val">AED (Dirham)</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹49,999</span></div>
                     </div>
                 </div>
             </div>
@@ -350,39 +328,31 @@
             <!-- CANADA -->
             <div class="country-section reveal" id="canada">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇨🇦</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 600 300"><path fill="#f00" d="M0 0h600v300H0z"/><path fill="#fff" d="M150 0h300v300H150z"/><path fill="#f00" d="M300 45l8 60 48 4-36 34 16 62-42-36-42 36 16-62-36-34 48-4z"/></svg></div>
                     <div>
                         <span class="section-label">North America</span>
                         <h2 style="font-size:2rem;margin:0;">Canada Company Registration</h2>
-                        <p style="color:var(--text-light);">Federal &amp; Provincial corporation incorporation across
-                            Canada</p>
+                        <p style="color:var(--text-light);">Federal &amp; Provincial corporation incorporation across Canada</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
-                        <p style="color:var(--text-light);margin-bottom:1.5rem;">Canada offers stable business
-                            environment, access to USMCA trade agreements, and a growing tech ecosystem. A Federal
-                            Canadian Corporation or Provincial LLC gives you access to North American markets.</p>
+                        <p style="color:var(--text-light);margin-bottom:1.5rem;">Canada offers stable business environment, access to USMCA trade agreements, and a growing tech ecosystem. A Federal Canadian Corporation or Provincial LLC gives you access to North American markets.</p>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> Federal or Provincial incorporation</li>
-                            <li><span class="check">✓</span> Business Number (BN) registration</li>
-                            <li><span class="check">✓</span> GST/HST registration</li>
-                            <li><span class="check">✓</span> Canadian Business Address</li>
-                            <li><span class="check">✓</span> Bank account guidance</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Federal or Provincial incorporation</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Business Number (BN) registration</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> GST/HST registration</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Canadian Business Address</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Bank account guidance</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register Canadian
-                                Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register Canadian Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
-                        <div class="info-row"><span class="label">Popular Province</span><span class="val">Ontario,
-                                BC</span></div>
-                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Corporation /
-                                LLP</span></div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–10 Business
-                                Days</span></div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹29,999</span></div>
+                        <div class="info-row"><span class="label">Popular Province</span><span class="val">Ontario, BC</span></div>
+                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Corporation / LLP</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–10 Business Days</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹29,999</span></div>
                     </div>
                 </div>
             </div>
@@ -390,35 +360,30 @@
             <!-- AUSTRALIA -->
             <div class="country-section reveal" id="australia">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇦🇺</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 1200 600"><path fill="#00008b" d="M0 0h1200v600H0z"/><path d="M0 0h600v300H0z" fill="#00008b"/><path d="M0 0l600 300M600 0L0 300" stroke="#fff" stroke-width="60"/><path d="M0 0l600 300M600 0L0 300" stroke="#ff0000" stroke-width="40"/><path d="M300 0v300M0 150h600" stroke="#fff" stroke-width="100"/><path d="M300 0v300M0 150h600" stroke="#ff0000" stroke-width="60"/><path fill="#fff" d="M300 420l12 36 38 0-31 22 12 36-31-22-31 22 12-36-31-22 38 0z"/></svg></div>
                     <div>
                         <span class="section-label">Asia Pacific</span>
                         <h2 style="font-size:2rem;margin:0;">Australia Company Registration</h2>
-                        <p style="color:var(--text-light);">Pty Ltd company registration with ASIC — Australia's premier
-                            business hub</p>
+                        <p style="color:var(--text-light);">Pty Ltd company registration with ASIC — Australia's premier business hub</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> Pty Ltd (Proprietary Limited) incorporation</li>
-                            <li><span class="check">✓</span> ABN &amp; ACN registration</li>
-                            <li><span class="check">✓</span> ASIC filing and compliance</li>
-                            <li><span class="check">✓</span> Australian business address service</li>
-                            <li><span class="check">✓</span> GST registration in Australia</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Pty Ltd (Proprietary Limited) incorporation</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> ABN &amp; ACN registration</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> ASIC filing and compliance</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Australian business address service</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> GST registration in Australia</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register
-                                Australian Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register Australian Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
                         <div class="info-row"><span class="label">Registrar</span><span class="val">ASIC</span></div>
-                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Pty Ltd</span>
-                        </div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">3–7 Business
-                                Days</span></div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹27,999</span></div>
+                        <div class="info-row"><span class="label">Entity Type</span><span class="val">Pty Ltd</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">3–7 Business Days</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹27,999</span></div>
                     </div>
                 </div>
             </div>
@@ -426,35 +391,30 @@
             <!-- HONG KONG -->
             <div class="country-section reveal" id="hongkong">
                 <div class="country-header">
-                    <div class="country-flag-lg">🇭🇰</div>
+                    <div class="country-flag-lg"><svg viewBox="0 0 900 600"><path fill="#ee1c25" d="M0 0h900v600H0z"/><path fill="#fff" d="M450 300l100-80 20 120-100 80-120-20z"/></svg></div>
                     <div>
                         <span class="section-label">Asia</span>
                         <h2 style="font-size:2rem;margin:0;">Hong Kong Company Registration</h2>
-                        <p style="color:var(--text-light);">Asia's premier financial hub — 16.5% corporate tax, no VAT
-                        </p>
+                        <p style="color:var(--text-light);">Asia's premier financial hub — 16.5% corporate tax, no VAT</p>
                     </div>
                 </div>
                 <div class="country-grid">
                     <div>
                         <ul class="benefit-list">
-                            <li><span class="check">✓</span> Private Limited Company (HK Ltd) formation</li>
-                            <li><span class="check">✓</span> Company Secretary service (mandatory)</li>
-                            <li><span class="check">✓</span> Registered address in Hong Kong</li>
-                            <li><span class="check">✓</span> Banking introduction (HSBC, Bank of East Asia)</li>
-                            <li><span class="check">✓</span> Business Registration Certificate</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Private Limited Company (HK Ltd) formation</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Company Secretary service (mandatory)</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Registered address in Hong Kong</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Banking introduction (HSBC, Bank of East Asia)</li>
+                            <li><span class="check"><svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Business Registration Certificate</li>
                         </ul>
-                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register HK
-                                Company →</a></div>
+                        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn-primary">Register HK Company <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
                     </div>
                     <div class="info-panel">
                         <h4>Quick Facts</h4>
-                        <div class="info-row"><span class="label">Registrar</span><span class="val">HKSAR Govt.</span>
-                        </div>
+                        <div class="info-row"><span class="label">Registrar</span><span class="val">HKSAR Govt.</span></div>
                         <div class="info-row"><span class="label">Corp Tax</span><span class="val">16.5%</span></div>
-                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–7 Business
-                                Days</span></div>
-                        <div class="info-row"><span class="label">Starting From</span><span class="val"
-                                style="color:var(--gold-dark);">₹34,999</span></div>
+                        <div class="info-row"><span class="label">Processing Time</span><span class="val">5–7 Business Days</span></div>
+                        <div class="info-row"><span class="label">Starting From</span><span class="val" style="color:var(--gold-dark);">₹34,999</span></div>
                     </div>
                 </div>
             </div>
@@ -468,12 +428,10 @@
             <div class="cta-banner reveal">
                 <span class="section-label">Start Today</span>
                 <h2>Ready to Go Global?</h2>
-                <p>Get a free consultation with our international business experts. We'll guide you to the best
-                    jurisdiction for your goals.</p>
+                <p>Get a free consultation with our international business experts. We'll guide you to the best jurisdiction for your goals.</p>
                 <div class="btn-group">
-                    <a href="contact.html" class="btn btn-primary btn-lg">📬 Get Free Consultation</a>
-                    <a href="https://wa.me/919099665509" target="_blank" class="btn btn-outline btn-lg">💬 WhatsApp
-                        Now</a>
+                    <a href="contact.html" class="btn btn-primary btn-lg"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Get Free Consultation</a>
+                    <a href="https://wa.me/919099665509" target="_blank" class="btn btn-outline btn-lg"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> WhatsApp Now</a>
                 </div>
             </div>
         </div>
@@ -484,60 +442,56 @@
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grid">
-                    <div class="footer-brand"><a href="index.html" class="logo">
-                            <div class="logo-icon">🏛️</div>
-                            <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance
-                                    Experts</span></div>
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3"></path><path d="M5 21V10"></path><path d="M9 21V10"></path><path d="M15 21V10"></path><path d="M19 21V10"></path><path d="m3 7 9-4 9 4"></path></svg></div>
+                            <div class="logo-text"><strong>Yuva Consultancy</strong><span>Business &amp; Compliance Experts</span></div>
                         </a>
-                        <p class="footer-about">Your trusted partner for business registration, compliance, and
-                            international company formation.</p>
+                        <p class="footer-about">Your trusted partner for business registration, compliance, and international company formation. Serving 5,000+ businesses across India and globally.</p>
                         <div class="footer-social">
-                            <div class="social-btn">📘</div>
-                            <div class="social-btn">💼</div>
-                            <div class="social-btn">📸</div>
+                            <div class="social-btn"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></div>
+                            <div class="social-btn"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+                            <div class="social-btn"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div>
                         </div>
                     </div>
                     <div class="footer-col">
                         <h4>International</h4>
                         <ul>
-                            <li><a href="#usa">🇺🇸 USA Company</a></li>
-                            <li><a href="#uk">🇬🇧 UK Company</a></li>
-                            <li><a href="#dubai">🇦🇪 Dubai Company</a></li>
-                            <li><a href="#canada">🇨🇦 Canada Company</a></li>
-                            <li><a href="#australia">🇦🇺 Australia Company</a></li>
-                            <li><a href="#hongkong">🇭🇰 Hong Kong</a></li>
+                            <li><a href="#usa">USA Company</a></li>
+                            <li><a href="#uk">UK Company</a></li>
+                            <li><a href="#dubai">Dubai Company</a></li>
+                            <li><a href="#canada">Canada Company</a></li>
+                            <li><a href="#australia">Australia Company</a></li>
+                            <li><a href="#hongkong">Hong Kong</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="services.html#fssai">🍽️ FSSAI</a></li>
-                            <li><a href="services.html#iec">🌐 IEC</a></li>
-                            <li><a href="services.html#dsc">🔏 DSC</a></li>
-                            <li><a href="iso.html">🏅 ISO</a></li>
-                            <li><a href="import-export.html">📦 Import &amp; Export</a></li>
+                            <li><a href="services.html#fssai">FSSAI Registration</a></li>
+                            <li><a href="services.html#iec">IEC Registration</a></li>
+                            <li><a href="services.html#dsc">DSC Signature</a></li>
+                            <li><a href="iso.html">ISO Certification</a></li>
+                            <li><a href="import-export.html">Import &amp; Export</a></li>
                         </ul>
                     </div>
                     <div class="footer-col footer-contact">
                         <h4>Contact</h4>
                         <ul>
-                            <li><span class="icon">📍</span><span>A-502 Pragati IT Park, Mota Varachha, Surat –
-                                    394105</span></li>
-                            <li><span class="icon">📞</span><a href="tel:+919099665509">+91 90996 65509</a></li>
-                            <li><span class="icon">💬</span><a href="https://wa.me/919099665509">WhatsApp</a></li>
+                            <li><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span><span>A-502 Pragati IT Park, Mota Varachha, Surat – 394105</span></li>
+                            <li><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><a href="tel:+919099665509">+91 90996 65509</a></li>
+                            <li><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><a href="https://wa.me/919099665509">WhatsApp</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;"><span>©
-                    2026 Yuva Consultancy. All Rights Reserved.</span><span><a href="contact.html">Privacy
-                        Policy</a></span></div>
+            <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;"><span>© 2026 Yuva Consultancy. All Rights Reserved.</span><span><a href="contact.html">Privacy Policy</a></span></div>
         </div>
     </footer>
-    <div class="whatsapp-float"><span class="whatsapp-tooltip">Go global! 💬</span><a href="https://wa.me/919099665509"
-            target="_blank">💬</a></div>
+    <div class="whatsapp-float"><span class="whatsapp-tooltip">Go global! <svg class="svg-icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><a href="https://wa.me/919099665509"
+            target="_blank"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a></div>
     <script src="assets/js/main.js"></script>
 </body>
 
