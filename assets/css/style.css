@@ -21,17 +21,17 @@
   --text:       #1A2340;
   --text-light: #5A6480;
 
-  --shadow-sm:  0 2px 8px rgba(10,31,68,0.08);
-  --shadow-md:  0 8px 24px rgba(10,31,68,0.12);
-  --shadow-lg:  0 20px 50px rgba(10,31,68,0.18);
-  --shadow-gold:0 8px 24px rgba(201,168,76,0.25);
+  --shadow-sm:  0 2px 10px rgba(10,31,68,0.06);
+  --shadow-md:  0 10px 30px rgba(10,31,68,0.08);
+  --shadow-lg:  0 20px 60px rgba(10,31,68,0.12);
+  --shadow-gold: 0 10px 30px rgba(201,168,76,0.15);
 
-  --radius-sm:  6px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
-  --radius-xl:  32px;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
 
-  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --header-h:   72px;
 }
 
@@ -51,6 +51,20 @@ body {
 img { max-width: 100%; display: block; }
 a  { text-decoration: none; color: inherit; }
 ul { list-style: none; }
+
+/* SVG Icon Base */
+.svg-icon {
+  width: 1.25em;
+  height: 1.25em;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.icon-lg { width: 2.5rem; height: 2.5rem; }
+.icon-md { width: 1.5rem; height: 1.5rem; }
+.icon-sm { width: 1rem; height: 1rem; }
 
 /* ---- Typography ---- */
 h1,h2,h3,h4,h5,h6 {
@@ -109,8 +123,8 @@ h1,h2,h3,h4,h5,h6 {
 .btn-primary:hover {
   background: var(--gold-dark);
   border-color: var(--gold-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(201,168,76,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(201,168,76,0.25);
 }
 
 .btn-outline {
@@ -131,8 +145,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 .btn-navy:hover {
   background: var(--navy-light);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(10,31,68,0.2);
 }
 
 .btn-whatsapp {
@@ -378,9 +392,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201,168,76,0.25);
 }
 
 .service-icon {
