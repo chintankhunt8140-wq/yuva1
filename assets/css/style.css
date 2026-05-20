@@ -3,7 +3,7 @@
    Brand: Navy Blue (#0A1F44) + Gold (#C9A84C)
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800&display=swap');
 
 /* ---- CSS Variables ---- */
 :root {
@@ -54,7 +54,7 @@ ul { list-style: none; }
 
 /* ---- Typography ---- */
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.25;
   color: var(--navy);
 }
@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .logo-text strong {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   color: var(--navy);
   line-height: 1.1;
@@ -486,7 +486,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .testimonial-card::before {
   content: '"';
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
   color: var(--gold);
   opacity: 0.3;
@@ -580,7 +580,7 @@ h1,h2,h3,h4,h5,h6 {
 .stat-item + .stat-item { border-left: 1px solid var(--light-gray); }
 
 .stat-number {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: var(--navy);
